@@ -68,7 +68,7 @@ print(mediana_temperatura)
 dataset.loc[dataset('Temperatura')<-130 | dataset('Temperatura')>130] = mediana_temperatura
 
 #verificamos se ainda temoeraturas fora do domínio
-dataset.loc [dataset('Temperatura')<-130 | dataser('Temperatura')>130]
+dataset.loc [dataset('Temperatura')<-130 | dataset('Temperatura')>130]
 #nenhum resultado
 
 #resolvendo umidade fora do domínio e corrigindo NAs (Not available)
@@ -105,7 +105,6 @@ print(agrupado_vento)
 dataset['Vento'].isnull().sum()
 
 #preenchendo NAs
-
 dataset['Vento'].fillna('Falso', inplace=True)
 
 #verificando se ainda existem NAs
